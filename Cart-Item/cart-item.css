@@ -24,7 +24,7 @@ button {
 
 .cart-container {
   padding: 60px;
-  height: 600px;
+  height: 650px;
   width: 800px;
   display: flex;
   gap: 20px;
@@ -73,11 +73,33 @@ button {
 }
 
 .description {
-  color: rgb(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0, 0.4);
+}
+
+.add-to-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-to-cart-button {
+  padding-block: 15px;
+  color: white;
+  border: none;
+  background-color: #4787ea;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 0 #1e57f3;
+  border-radius: 10px;
+}
+
+.current-stock {
+  margin-block: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .green-circle {
-  width: 30px;
+  width: 20px;
 }
 
 .button-img {
