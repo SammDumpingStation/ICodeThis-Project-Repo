@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", "sans-serif";
+  color: white;
+  background-color: #f2f8fd;
+}
+
+body {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.transparent-wrap {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #dfe5f8;
+}
+
+.main-div {
+  background-color: #3354ca;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 200px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.form {
+  width: 600px;
+  position: relative;
+}
+
+.arrow-form {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.input {
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  padding: 20px;
+  background-color: #7e94df;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.img-div {
+  position: absolute;
+  left: 20%;
+  bottom: -40px;
+}
+
+.round-profile {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  object-fit: cover;
+  transition: transform 0.15s;
+}
+
+.round-profile:hover {
+  transform: translateY(-10px);
+}
