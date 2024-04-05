@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -50,14 +51,29 @@ button {
   background-color: #241d52;
 }
 
-h1.product {
-  font-size: 30px;
+.product {
+  font-size: 2rem;
   font-weight: 500;
+}
+
+.price {
+  margin: 40px 0px;
+}
+
+.last-price {
+  text-decoration: line-through;
+  color: rgb(10, 10, 10, 0.5);
+  font-size: 1.1rem;
 }
 
 .discounted-price {
   font-size: 60px;
   font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .green-circle {
