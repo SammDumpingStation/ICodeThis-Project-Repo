@@ -21,3 +21,63 @@ body {
 button {
   cursor: pointer;
 }
+
+.main-container {
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.top-section,
+.friends-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-section {
+  margin-bottom: 30px;
+}
+
+.friends-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.friends-container {
+  align-items: center;
+}
+
+.friends-info {
+  margin-left: 20px;
+  flex-grow: 1;
+  line-height: 22px;
+}
+
+.bold-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.light-text {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(10, 10, 10, 0.5);
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.confirm-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
