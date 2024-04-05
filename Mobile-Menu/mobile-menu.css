@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-container {
+  width: 300px;
+  height: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 3px rgba(10, 10, 10, 0.5);
+  border-radius: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+span.user-name {
+  
+}
+
+.add-branch-button img {
+  width: 30px;
+}
+
+.choice-icon {
+  width: 30px;
+  opacity: 0.3;
+}
