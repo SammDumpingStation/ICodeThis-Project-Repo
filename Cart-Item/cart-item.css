@@ -6,6 +6,64 @@
   padding: 0;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.cart-container {
+  padding: 60px;
+  height: 600px;
+  width: 800px;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(10, 10, 10, 0.5);
+}
+
+.headset-img {
+  height: 250px;
+  width: 250px;
+}
+
+.cart-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shipping {
+  width: fit-content;
+  padding: 10px 5px;
+  border-radius: 25px;
+  color: white;
+  background-color: #241d52;
+}
+
+h1.product {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.discounted-price {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.green-circle {
+  width: 30px;
+}
+
+.button-img {
+  width: 30px;
 }
