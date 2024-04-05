@@ -32,6 +32,12 @@ button {
   border-radius: 20px;
 }
 
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .profile-pic {
   width: 80px;
   height: 80px;
@@ -40,8 +46,35 @@ button {
 }
 
 span.user-name {
-  
+  font-weight: 500;
+  font-size: 1.3rem;
 }
+
+span.user-occupation {
+  font-weight: 300;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 40px 0;
+}
+
+.add-branch-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2276f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
 
 .add-branch-button img {
   width: 30px;
