@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-container {
+  width: 300px;
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.top-text {
+  font-size: 1.2rem;
+}
+
+.bday-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bday-container {
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bday-person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.age {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.view-button {
+  margin-top: 20px;
+  border: none;
+  padding-block: 16px;
+  background-color: #FD6AA9;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px #ff7ab4;
+}
