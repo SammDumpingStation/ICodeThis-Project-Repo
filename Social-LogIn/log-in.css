@@ -6,6 +6,13 @@
   padding: 0;
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 html {
   font-family: "Roboto", "sans-serif";
   color: white;
@@ -18,6 +25,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+button {
+  cursor: pointer;
 }
 
 .transparent-wrap {
@@ -54,6 +65,8 @@ h2 {
   width: 50px;
   background-color: white;
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .input {
@@ -85,4 +98,28 @@ h2 {
 
 .round-profile:hover {
   transform: translateY(-10px);
+}
+
+.dialog-pop-up {
+  border: none;
+  padding: 1.5em 2.5em;
+  border-radius: 10px;
+  text-align: end;
+  font-size: 1.1rem;
+}
+
+.dialog-pop-up::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-button {
+  font-size: 1rem;
+  margin-top: 1.5em;
+  border: none;
+  background-color: #dfe5f8;
+  padding: 0.5em 2em;
+}
+
+.show-email {
+  margin-left: 1em;
 }
