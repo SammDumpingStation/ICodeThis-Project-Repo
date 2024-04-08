@@ -9,20 +9,20 @@
   <body>
     <nav>
       <ul class="navigation">
-        <li>Students</li>
-        <li>Books</li>
-        <li>Librarians</li>
+        <li><a href="students-section.html">Students</a></li>
+        <li><a href="book-section.html">Books</a></li>
+        <li><a href="librarian-section.html">Librarians</a></li>
       </ul>
     </nav>
 
     <main>
       <h1 class="title">Adding New Students</h1>
       <form action="simple-library.js" class="form">
-        <label for="firstname">First Name</label>
-        <input class="input" type="text" name="fname" placeholder="Enter yout first name" required/>
+        <label class="label" for="firstname">First Name</label>
+        <input class="input studentFname" type="text" name="fname" placeholder="Enter yout first name" required/>
 
-        <label for="lastname">Last Name</label>
-        <input class="input" type="text" name="fname" placeholder="Enter yout last name" required/>
+        <label class="label" for="lastname">Last Name</label>
+        <input class="input studentLname" type="text" name="fname" placeholder="Enter yout last name" required/>
 
         <button class="submit-button">Submit</button>
       </form>

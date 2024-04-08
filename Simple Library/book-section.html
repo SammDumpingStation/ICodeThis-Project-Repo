@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="simple-library.css" />
+    <title>Simple Library</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li><a href="students-section.html">Students</a></li>
+        <li><a href="book-section.html">Books</a></li>
+        <li><a href="librarian-section.html">Librarians</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="title">Adding New Books</h1>
+      <form action="simple-library.js" class="form">
+        <label class="label" for="title">Book Title</label>
+        <input class="input bookTitle" type="text" name="title" placeholder="Enter the Book Title" required/>
+
+        <label class="label" for="author">Author Name</label>
+        <input class="input bookAuthor" type="text" name="author" placeholder="Enter Author Name" required/>
+
+        <button class="submit-button">Submit</button>
+      </form>
+    </main>
+    <script src="simple-library.js"></script>
+  </body>
+</html>

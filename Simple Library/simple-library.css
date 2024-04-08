@@ -10,6 +10,13 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation {
   display: flex;
   gap: 2em;
@@ -17,13 +24,23 @@ html {
   list-style: none;
 }
 
-li {
+a {
+  text-decoration: none;
+  color: black;
   transition: color 0.15s;
 }
 
-li:hover {
+a:hover {
   cursor: pointer;
   color: red;
+}
+
+main {
+  min-width: 30vw;
+}
+
+main > h1 {
+  text-align: center;
 }
 
 .title {
@@ -36,7 +53,16 @@ li:hover {
   gap: 1em;
 }
 
-.input, .submit-button {
-  max-width: 50vw;
+.input,
+.submit-button {
   padding-block: 0.6em;
+}
+
+.submit-button {
+  border: none;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  background-image: linear-gradient(#4868d8, #380b99);
+  min-width: 40%;
 }
