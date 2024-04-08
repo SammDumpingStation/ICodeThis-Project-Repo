@@ -20,3 +20,12 @@ let librarianStore = localStorage.setItem(
   JSON.stringify(librarianStorage)
 );
 let bookStore = localStorage.setItem("book", JSON.stringify(bookStorage));
+
+const studentFname = document.querySelector('.student-fname');
+const studentLname = document.querySelector('.student-lname');
+const librarianFname = document.querySelector(".librarian-fname");
+const librarianLname = document.querySelector(".librarian-lname");
+const bookTitle = document.querySelector(".book-title");
+const bookAuthor = document.querySelector(".book-author");
+
+
