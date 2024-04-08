@@ -98,6 +98,7 @@ main > h1 {
 }
 
 footer {
+  /* display: none; */
   margin-top: 5em;
   min-width: 20vw;
   min-height: 40vh;
@@ -118,6 +119,10 @@ footer {
 .records > * {
   flex: 1 1 100%;
   text-align: center;
+}
+
+.records-container {
+  height: 100%;
 }
 
 @media (max-width: 780px) {

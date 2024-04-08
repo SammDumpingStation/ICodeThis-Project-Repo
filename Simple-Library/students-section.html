@@ -17,13 +17,13 @@
 
     <main>
       <h1 class="title">Adding New Students</h1>
-      <form action="simple-library.js" class="form">
+      <form class="form">
         <label class="label" for="firstname">First Name</label>
         <input
           class="input student-fname"
           type="text"
           name="fname"
-          placeholder="Enter yout first name"
+          placeholder="Enter your first name"
           required
         />
 
@@ -32,19 +32,22 @@
           class="input student-lname"
           type="text"
           name="fname"
-          placeholder="Enter yout last name"
+          placeholder="Enter your last name"
           required
         />
 
         <div class="button-container">
-          <button class="button see-button see-students-button">
+          <button type="button" class="button see-button see-students-button">
             See Students
           </button>
-          <button class="button submit-button student-button">Submit</button>
+          <button type="button" class="button submit-button student-button">
+            Submit
+          </button>
         </div>
       </form>
     </main>
 
+    <button class="reset-button">Reset</button>
     <footer>
       <nav class="see-records">
         <ul class="ul-records">
@@ -52,14 +55,9 @@
           <li>Last Name</li>
         </ul>
       </nav>
-      <div class="records-container">
-        <div class="records">
-          <p>Samm</p>
-          <p>Caagbay</p>
-        </div>
-      </div>
+      <div class="records-container"></div>
     </footer>
 
-    <!-- <script src="simple-library.js"></script> -->
+    <script src="./simple-library.js"></script>
   </body>
 </html>
