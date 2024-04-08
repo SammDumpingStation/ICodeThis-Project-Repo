@@ -19,14 +19,31 @@
       <h1 class="title">Adding New Librarians</h1>
       <form action="simple-library.js" class="form">
         <label class="label" for="libfname">First Name</label>
-        <input class="input librarian-fname" type="text" name="libfname" placeholder="Enter yout first name" required/>
+        <input
+          class="input librarian-fname"
+          type="text"
+          name="libfname"
+          placeholder="Enter yout first name"
+          required
+        />
 
         <label class="label" for="liblname">Last Name</label>
-        <input class="input librarian-lname" type="text" name="liblname" placeholder="Enter yout last name" required/>
+        <input
+          class="input librarian-lname"
+          type="text"
+          name="liblname"
+          placeholder="Enter yout last name"
+          required
+        />
 
-        <button class="submit-button">Submit</button>
+        <div class="button-container">
+          <button class="button see-button see-librarian-button">
+            See Librarian
+          </button>
+          <button class="button submit-button librarian-button">Submit</button>
+        </div>
       </form>
     </main>
-    <script src="simple-library.js"></script>
+    <!-- <script src="simple-library.js"></script> -->
   </body>
 </html>

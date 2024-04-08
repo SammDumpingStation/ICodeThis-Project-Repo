@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  background-color: #f5f5fa;
 }
 
 body {
@@ -24,6 +25,10 @@ body {
   list-style: none;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -33,6 +38,15 @@ a {
 a:hover {
   cursor: pointer;
   color: red;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(#e3d5d5, #565555);
+  box-shadow: 0 5px 10px rgba(10, 10, 10, 0.5);
 }
 
 main {
@@ -53,16 +67,61 @@ main > h1 {
   gap: 1em;
 }
 
-.input,
-.submit-button {
-  padding-block: 0.6em;
+.input {
+  padding: 0.5em;
+  font-size: clamp(0.8em, 0.9em, 1.1em);
+}
+
+.button-container {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  color: white;
+  min-width: 40%;
+  max-width: 50%;
+  border-radius: 20px;
+  flex-grow: 1;
+  padding-block: 1em;
 }
 
 .submit-button {
-  border: none;
-  margin: auto;
-  color: white;
-  border-radius: 20px;
-  background-image: linear-gradient(#4868d8, #380b99);
-  min-width: 40%;
+  background-image: linear-gradient(#4a6ede, #1c3fb9);
+}
+
+.see-button {
+  background-image: linear-gradient(#e14d4d, #b91c1c);
+}
+
+footer {
+  margin-top: 5em;
+  min-width: 20vw;
+  min-height: 40vh;
+}
+
+.ul-records,
+.records {
+  display: flex;
+  align-items: center;
+}
+
+.ul-records {
+  border-bottom: 1px solid #b91c1c;
+  margin-bottom: 0.5em;
+}
+
+.ul-records > *,
+.records > * {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .button-container {
+    flex-direction: column;
+  }
 }

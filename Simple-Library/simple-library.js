@@ -1,31 +1,41 @@
-let studentStorage = JSON.parse(localStorage.getItem("student")) || {
-  'First Name': '',
-  'Last Name': ''
-};
-let librarianStorage = JSON.parse(localStorage.getItem("librarian")) || {
-  'Lib First Name':'',
-  'Lib Last Name': ''
-};
-let bookStorage = JSON.parse(localStorage.getItem("book")) || {
-  'Book': '',
-  'Author': ''
-};
+let studentStorage = JSON.parse(localStorage.getItem("student")) || [];
+let librarianStorage = JSON.parse(localStorage.getItem("librarian")) || [];
+let bookStorage = JSON.parse(localStorage.getItem("book")) || [];
 
-let studentStore = localStorage.setItem(
-  "student",
-  JSON.stringify(studentStorage)
-);
-let librarianStore = localStorage.setItem(
-  "librarian",
-  JSON.stringify(librarianStorage)
-);
-let bookStore = localStorage.setItem("book", JSON.stringify(bookStorage));
+function studentStore(student) {
+  localStorage.setItem("student", JSON.stringify(student));
+}
 
-const studentFname = document.querySelector('.student-fname');
-const studentLname = document.querySelector('.student-lname');
-const librarianFname = document.querySelector(".librarian-fname");
-const librarianLname = document.querySelector(".librarian-lname");
-const bookTitle = document.querySelector(".book-title");
-const bookAuthor = document.querySelector(".book-author");
+function librarianStore(librarian) {
+  localStorage.setItem("librarian", JSON.stringify(librarian));
+}
 
+function bookStore(book) {
+  localStorage.setItem("book", JSON.stringify(book));
+}
 
+let studentFname = document.querySelector(".student-fname").value;
+let studentLname = document.querySelector(".student-lname").value;
+let librarianFname = document.querySelector(".librarian-fname").value;
+let librarianLname = document.querySelector(".librarian-lname").value;
+let bookTitle = document.querySelector(".book-title").value;
+let bookAuthor = document.querySelector(".book-author").value;
+
+let studentButton = document.querySelector(".student-button");
+let librarianButton = document.querySelector(".librarian-button");
+let bookButton = document.querySelector(".book-button");
+
+function storageLibrary(buttonType) {
+  if (buttonType === "student") {
+    studentButton.addEventListener("click", () => {
+
+    });
+  } else if (buttonType === "librarian") {
+    librarianButton.addEventListener("click", () => {
+
+    });
+  } else if (buttonType === "book") {
+    bookButton.addEventListener("click", () => {
+    });
+  }
+}

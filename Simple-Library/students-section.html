@@ -19,14 +19,47 @@
       <h1 class="title">Adding New Students</h1>
       <form action="simple-library.js" class="form">
         <label class="label" for="firstname">First Name</label>
-        <input class="input student-fname" type="text" name="fname" placeholder="Enter yout first name" required/>
+        <input
+          class="input student-fname"
+          type="text"
+          name="fname"
+          placeholder="Enter yout first name"
+          required
+        />
 
         <label class="label" for="lastname">Last Name</label>
-        <input class="input student-lname" type="text" name="fname" placeholder="Enter yout last name" required/>
+        <input
+          class="input student-lname"
+          type="text"
+          name="fname"
+          placeholder="Enter yout last name"
+          required
+        />
 
-        <button class="submit-button">Submit</button>
+        <div class="button-container">
+          <button class="button see-button see-students-button">
+            See Students
+          </button>
+          <button class="button submit-button student-button">Submit</button>
+        </div>
       </form>
     </main>
-    <script src="simple-library.js"></script>
+
+    <footer>
+      <nav class="see-records">
+        <ul class="ul-records">
+          <li>First Name</li>
+          <li>Last Name</li>
+        </ul>
+      </nav>
+      <div class="records-container">
+        <div class="records">
+          <p>Samm</p>
+          <p>Caagbay</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="simple-library.js"></script> -->
   </body>
 </html>
