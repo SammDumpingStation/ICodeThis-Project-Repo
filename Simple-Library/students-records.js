@@ -1,10 +1,10 @@
 const studentStorage = JSON.parse(localStorage.getItem("student")) || [];
 
-function studentStore() {
-  localStorage.setItem("student", JSON.stringify(studentStorage));
+function bookStore() {
+  localStorage.setItem("student", JSON.stringify(bookStorage));
 }
 
-renderStudent();
+renderBooks();
 
 const studentFname = document.querySelector(".student-fname");
 const studentLname = document.querySelector(".student-lname");
@@ -14,17 +14,16 @@ const resetButton = document.querySelector(".reset-button");
 const hiddenRecords = document.querySelector(".inside-footer");
 
 submitButton.addEventListener("click", () => {
-  studentName();
-  studentFname.value = "";
-  studentLname.value = "";
+  bookInformation();
+  bookName.value = "";
+  bookAuthor.value = "";
 });
 
 resetButton.addEventListener("click", () => {
-  studentStorage.length = 0;
+  bookStorage.length = 0;
   localStorage.removeItem("student");
-  renderStudent();
+  renderBooks();
 });
-
 
 seeRecordButton.addEventListener("click", () => {
   if (
@@ -39,20 +38,20 @@ seeRecordButton.addEventListener("click", () => {
   }
 });
 
-function studentName() {
-  const fname = studentFname.value;
-  const lname = studentLname.value;
+function bookInformation() {
+  const fname = bookName.value;
+  const lname = bookAuthor.value;
   const studentString = `<div class="records"><p>${fname}</p><p>${lname}</p></div>`;
-  studentStorage.unshift(studentString);
-  studentStore();
-  renderStudent();
-};
+  bookStorage.unshift(studentString);
+  bookStore();
+  renderBooks();
+}
 
-function renderStudent() {
+function renderBooks() {
   let renderHTML = "";
-  studentStorage.forEach((student) => {
+  bookStorage.forEach((student) => {
     const studentHTML = student;
     renderHTML += studentHTML;
   });
   document.querySelector(".records-container").innerHTML = renderHTML;
-};
+}
