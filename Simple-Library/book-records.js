@@ -1,10 +1,10 @@
-const bookStorage = JSON.parse(localStorage.getItem("book")) || [];
+const studentStorage = JSON.parse(localStorage.getItem("book")) || [];
 
-function bookStore() {
-  localStorage.setItem("book", JSON.stringify(bookStorage));
+function studentStore() {
+  localStorage.setItem("book", JSON.stringify(studentStorage));
 }
 
-renderBooks();
+renderStudents();
 
 const bookName = document.querySelector(".book-title");
 const bookAuthor = document.querySelector(".book-author");
@@ -20,9 +20,9 @@ submitButton.addEventListener("click", () => {
 });
 
 resetButton.addEventListener("click", () => {
-  bookStorage.length = 0;
+  studentStorage.length = 0;
   localStorage.removeItem("book");
-  renderBooks();
+  renderStudents();
 });
 
 seeRecordButton.addEventListener("click", () => {
@@ -40,14 +40,14 @@ function bookInformation() {
   const fname = bookName.value;
   const lname = bookAuthor.value;
   const studentString = `<div class="records"><p>${fname}</p><p>${lname}</p></div>`;
-  bookStorage.unshift(studentString);
-  bookStore();
-  renderBooks();
+  studentStorage.unshift(studentString);
+  studentStore();
+  renderStudents();
 }
 
-function renderBooks() {
+function renderStudents() {
   let renderHTML = "";
-  bookStorage.forEach((book) => {
+  studentStorage.forEach((book) => {
     const bookHTML = book;
     renderHTML += bookHTML;
   });
