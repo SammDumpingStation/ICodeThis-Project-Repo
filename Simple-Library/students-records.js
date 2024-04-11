@@ -14,9 +14,9 @@ const resetButton = document.querySelector(".reset-button");
 const hiddenRecords = document.querySelector(".inside-footer");
 
 submitButton.addEventListener("click", () => {
-  bookInformation();
-  bookName.value = "";
-  bookAuthor.value = "";
+  studentInformation();
+  studentFname.value = "";
+  studentLname.value = "";
 });
 
 resetButton.addEventListener("click", () => {
@@ -36,9 +36,9 @@ seeRecordButton.addEventListener("click", () => {
   }
 });
 
-function bookInformation() {
-  const fname = bookName.value;
-  const lname = bookAuthor.value;
+function studentInformation() {
+  const fname = studentFname.value;
+  const lname = studentLname.value;
   const studentString = `<div class="records"><p>${fname}</p><p>${lname}</p></div>`;
   studentStorage.unshift(studentString);
   studentStore();

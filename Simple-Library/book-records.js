@@ -1,10 +1,10 @@
-const studentStorage = JSON.parse(localStorage.getItem("book")) || [];
+const bookStorage = JSON.parse(localStorage.getItem("book")) || [];
 
-function studentStore() {
-  localStorage.setItem("book", JSON.stringify(studentStorage));
+function bookStore() {
+  localStorage.setItem("book", JSON.stringify(bookStorage));
 }
 
-renderStudents();
+renderBooks();
 
 const bookName = document.querySelector(".book-title");
 const bookAuthor = document.querySelector(".book-author");
@@ -20,9 +20,9 @@ submitButton.addEventListener("click", () => {
 });
 
 resetButton.addEventListener("click", () => {
-  studentStorage.length = 0;
+  bookStorage.length = 0;
   localStorage.removeItem("book");
-  renderStudents();
+  renderBooks();
 });
 
 seeRecordButton.addEventListener("click", () => {
@@ -37,17 +37,17 @@ seeRecordButton.addEventListener("click", () => {
 });
 
 function bookInformation() {
-  const fname = bookName.value;
-  const lname = bookAuthor.value;
-  const studentString = `<div class="records"><p>${fname}</p><p>${lname}</p></div>`;
-  studentStorage.unshift(studentString);
-  studentStore();
-  renderStudents();
+  const bName = bookName.value;
+  const bAuthor = bookAuthor.value;
+  const bookString = `<div class="records"><p>${bName}</p><p>${bAuthor}</p></div>`;
+  bookStorage.unshift(bookString);
+  bookStore();
+  renderBooks();
 }
 
-function renderStudents() {
+function renderBooks() {
   let renderHTML = "";
-  studentStorage.forEach((book) => {
+  bookStorage.forEach((book) => {
     const bookHTML = book;
     renderHTML += bookHTML;
   });
