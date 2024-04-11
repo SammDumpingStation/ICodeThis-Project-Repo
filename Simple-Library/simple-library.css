@@ -25,12 +25,13 @@ ul li {
 a {
   text-decoration: none;
   color: black;
-  transition: color 0.15s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a:hover {
   cursor: pointer;
-  color: red;
+  color: white;
+  background-color: #497adc;
 }
 
 button {
