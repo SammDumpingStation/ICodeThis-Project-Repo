@@ -1,0 +1,47 @@
+footer {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  min-width: 20vw;
+  min-height: 40vh;
+  border-radius: 10px;
+}
+
+.inside-footer {
+  display: none;
+}
+
+.ul-records,
+.records {
+  display: flex;
+  align-items: center;
+}
+
+.ul-records {
+  border-bottom: 1px solid #b91c1c;
+  margin-bottom: 0.5em;
+}
+
+.ul-records > *,
+.records > * {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.records {
+  box-shadow: 0 0 3px rgba(10, 10, 10, 0.3);
+  border-radius: 10px;
+}
+
+.records-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reset-button {
+  margin-bottom: 10em;
+  background-image: linear-gradient(#e14d4d, #b91c1c);
+  flex-grow: 0;
+  min-width: 20%;
+  max-width: 30%;
+}
