@@ -31,8 +31,10 @@ seeRecordButton.addEventListener("click", () => {
     hiddenRecords.style.display === ""
   ) {
     hiddenRecords.style.display = "block";
+    seeRecordButton.innerHTML = 'Hide Record';
   } else {
     hiddenRecords.style.display = "none";
+    seeRecordButton.innerHTML = "See Books";
   }
 });
 
